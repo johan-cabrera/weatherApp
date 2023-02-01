@@ -1,0 +1,68 @@
+:root{
+    --text-main: rgb(255,255,255,1);
+    --text-secondary: rgb(255,255,255,.9);
+    --box-border: rgb(255,255,255,.6);
+    --box-background: rgb(81,30,79, .2);
+    --error: rgba(222, 56, 56, 0.4);
+}
+
+.background{
+    background-image: url('/resources/img/defaultwallpaper.jpg');
+    background-position: center;
+}
+
+.background_day{
+    background-image: url('/resources/img/daywallpaper.jpg');
+    background-position: center;
+}
+
+.background_night{
+    background-image: url('/resources/img/nightWallpaper.jpg');
+    background-position: center;
+}
+
+.box_container{
+    background-color: var(--box-background);
+    border: 2px solid var(--box-border);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+
+.weather_input{
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-secondary);
+    border-bottom: 2px solid var(--box-border);
+}
+
+.weather_input:focus{
+    border-bottom: 2px solid var(--text-secondary);
+}
+
+.weather_input::placeholder{
+    color: var(--box-border);
+}
+
+.weather_button{
+    border: 2px solid var(--box-border);
+    color: var(--box-border);
+    cursor: pointer;
+}
+
+.weather_button:hover{
+    border: 2px solid var(--text-secondary);
+    color: var(--text-secondary);
+}
+
+.weather_button:active{
+    transform: scale(0.95);
+}
+
+.text_color{
+    color: var(--text-main);
+}
+
+.text_family{
+    font-family: 'Raleway', sans-serif;
+}

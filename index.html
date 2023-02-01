@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="container-fluid vh-100">
+        <section class="row h-100 align-items-center justify-content-center background text_family" id="weather_form">
+            <div class="position-absolute top-0 my-5 py-5 fw-bold display-5 text-center text_color">
+                Weather App
+            </div>
+            <div class="col col-md-6 col-xl-4">
+
+                <form class="p-4 box_container" id="form" method="POST">
+                    <div class="my-4 text-center">
+                        <input type="text" name="country" placeholder="Your country name" class="w-75 py-2 fs-5 weather_input" required>
+                    </div>
+                    <div class="my-4 text-center">
+                        <input type="text" name="city" placeholder="Your city name" class="w-75 py-2 fs-5 weather_input" required>
+                    </div>
+                    <div class="my-4 text-center">
+                        <input type="submit" value="GET WEATHER" class="w-75 py-2 fs-5 bg-transparent weather_button">
+                    </div>
+                </form>
+                
+            </div>           
+        </section>
+        <section class="row h-100 align-items-center justify-content-center position-relative d-none text_family" id="weather_info">
+            <div class="col text-center text-md-start p-5 position-absolute top-0 start-0">
+                <button class="p-2 fs-5 text_color box_container weather_button" id="get_form">
+                    <i class="bi bi-caret-left-fill"></i> 
+                    Back to Search
+                </button>  
+            </div>
+            <div class="col col-md-6 col-xl-4">
+                <div class="p-4 container box_container">
+                    <div class="row mt-3">
+                        <div class="col fw-bold display-1 text-center text_color" id="weather_Temp">
+                            29°
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col fw-light fs-3 text-center text_color" id="weather_Place">
+                            San Salvador, El Salvador
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col fw-normal fs-3 text-center text_color" id="weather_Clouds">
+                            Clear Sky
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col fw-light fs-4 text-center text_color">
+                            humidity
+                        </div>
+                        <div class="col fw-light fs-4 text-center text_color">
+                            Pressure
+                        </div>
+                        <div class="col fw-light fs-4 text-center text_color">
+                            wind
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col fw-normal fs-2 text-center text_color" id="weather_Humidity">
+                            72%
+                        </div>
+                        <div class="col fw-normal fs-2 text-center text_color" id="weather_Pressure">
+                            1029hPa
+                        </div>
+                        <div class="col fw-normal fs-2 text-center text_color" id="weather_Wind">
+                            12km
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="resources/js/scripts.js" type="module"></script>
+</body>
+</html>

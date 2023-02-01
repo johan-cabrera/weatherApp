@@ -34,7 +34,7 @@ const requestApi = async (data)=>{
 
     const appID = '66161ebf428cb0e50503fdfa4ac0d2e7';
     
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${appID}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${appID}&units=metric`;
 
 
     const requestJSON = await fetch(url);
